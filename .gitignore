@@ -25,3 +25,6 @@ hs_err_pid*
 /dependency-lookup/mvnw
 /dependency-lookup/mvnw.cmd
 /dependency-lookup/.mvn/
+/dependency-injection/mvnw
+/dependency-injection/mvnw.cmd
+/dependency-injection/.mvn/

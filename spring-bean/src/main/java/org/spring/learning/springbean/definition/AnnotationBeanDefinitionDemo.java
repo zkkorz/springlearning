@@ -23,10 +23,10 @@ public class AnnotationBeanDefinitionDemo {
         //通过BeanDefinition注册API实现
         registerBeanDefinition(applicationContext, "name-user", User.class);
         registerBeanDefinition(applicationContext, null, User.class);
-        //启动应用上下文
-        applicationContext.refresh();
         //注入 Configuration Class 配置类
         applicationContext.register(Config.class);
+        //启动应用上下文
+        applicationContext.refresh();
         System.out.println("Config 类型所有的Bean" + applicationContext.getBeansOfType(Config.class));
         System.out.println("User 类型所有的Bean" + applicationContext.getBeansOfType(User.class));
         //关闭应用上下文
