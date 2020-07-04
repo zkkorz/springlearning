@@ -24,6 +24,13 @@
             <artifactId>iocoverview</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
+
+        <!-- JSR 330 -->
+        <dependency>
+            <groupId>javax.inject</groupId>
+            <artifactId>javax.inject</artifactId>
+            <version>1</version>
+        </dependency>
     </dependencies>
 
 </project>

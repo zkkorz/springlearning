@@ -5,12 +5,30 @@ import org.springframework.beans.factory.ObjectProvider;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.xml.XmlBeanDefinitionReader;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.context.annotation.Lazy;
+
+import javax.inject.Inject;
+import java.util.List;
+import java.util.Optional;
 
 public class AnnotationDependencyInjectResolutionDemo {
 
     @Autowired
-    private User user;//DependencyDescriptor = 必须的（required）+ 实时注入（eager=true） + 通过类型进行依赖查找 + 字段名称 user
-    // + primary = true
+    @Lazy
+    private User lazyUser;
+
+    @Inject
+    private User injectUser;
+
+//    @Autowired
+//    private User user;//DependencyDescriptor = 必须的（required）+ 实时注入（eager=true） + 通过类型进行依赖查找 + 字段名称 user
+//    // + primary = true
+//
+//    @Autowired
+//    private List<User> users;
+//
+//    @Autowired
+//    private Optional<User> optionalUser;
 
     public static void main(String[] args) {
         //创建BeanFactory容器
@@ -30,7 +48,7 @@ public class AnnotationDependencyInjectResolutionDemo {
 
         AnnotationDependencyInjectResolutionDemo demo = applicationContext.getBean(AnnotationDependencyInjectResolutionDemo.class);
 
-        System.out.println("user：：：" + demo.user);
+       // System.out.println("user：：：" + demo.user);
 
         //关闭应用上下文
         applicationContext.close();
