@@ -48,3 +48,6 @@ hs_err_pid*
 /.idea/uiDesigner.xml
 /.idea/vcs.xml
 /.idea/workspace.xml
+/bean-scope/.mvn/
+/bean-scope/mvnw
+/bean-scope/mvnw.cmd
