@@ -1,4 +1,4 @@
-package com.spring.learning.beanscope.bean.scope;
+package com.spring.learning.beanscope.bean.lifecycle;
 import com.spring.learning.iocoverview.domain.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
