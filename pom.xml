@@ -51,6 +51,7 @@
         <module>spring-bean</module>
         <module>bean-scope</module>
         <module>bean-lifecycle</module>
+        <module>spring-configuration-metadata</module>
     </modules>
 
 </project>
