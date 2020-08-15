@@ -54,3 +54,6 @@ hs_err_pid*
 /bean-lifecycle/mvnw
 /bean-lifecycle/mvnw.cmd
 /spring-configuration-metadata/target/
+/resource/mvnw
+/resource/mvnw.cmd
+/resource/.mvn/
