@@ -57,3 +57,4 @@ hs_err_pid*
 /resource/mvnw
 /resource/mvnw.cmd
 /resource/.mvn/
+/i18n/.mvn/
