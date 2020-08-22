@@ -16,6 +16,8 @@ public class User implements BeanNameAware {
      */
     private transient String beanName;
 
+    private Company company;
+
     public Long getId() {
         return id;
     }
@@ -32,11 +34,20 @@ public class User implements BeanNameAware {
         this.name = name;
     }
 
+    public Company getCompany() {
+        return company;
+    }
+
+    public void setCompany(Company company) {
+        this.company = company;
+    }
+
     @Override
     public String toString() {
         return "User{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
+                ", company=" + company +
                 '}';
     }
 

@@ -59,6 +59,7 @@
         <module>bean-lifecycle</module>
         <module>spring-configuration-metadata</module>
         <module>resource</module>
+        <module>data-binding</module>
     </modules>
 
 </project>
