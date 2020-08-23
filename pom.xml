@@ -60,6 +60,7 @@
         <module>spring-configuration-metadata</module>
         <module>resource</module>
         <module>data-binding</module>
+        <module>conversion</module>
     </modules>
 
 </project>

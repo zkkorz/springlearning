@@ -4,6 +4,7 @@ import org.springframework.beans.factory.BeanNameAware;
 
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
+import java.util.Properties;
 
 public class User implements BeanNameAware {
 
@@ -42,6 +43,8 @@ public class User implements BeanNameAware {
         this.company = company;
     }
 
+    private Properties context;
+
     @Override
     public String toString() {
         return "User{" +
@@ -68,5 +71,13 @@ public class User implements BeanNameAware {
     @Override
     public void setBeanName(String name) {
         this.beanName = name;
+    }
+
+    public Properties getContext() {
+        return context;
+    }
+
+    public void setContext(Properties context) {
+        this.context = context;
     }
 }
